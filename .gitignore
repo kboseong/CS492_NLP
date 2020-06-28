@@ -1,0 +1,5 @@
+pynb_checkpoints
+__pycache__
+saved/
+.vscode
+*.ipynb
