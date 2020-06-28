@@ -1,0 +1,31 @@
+python3 train.py \
+    --gpus 1 \
+    --num_workers 4 \
+    --seed 7777 \
+    --config_json ../pretrained/large_v1/large_config.json \
+    --model_file ../pretrained/large_v1/large_v1_model.bin \
+    --vocab_file ../pretrained/large_v1/large_v1_32k_vocab.txt \
+    --num_train_epochs 2 \
+    --train_batch_size 20 \
+    --eval_batch_size 128 \
+    --evaluation_step 3000 \
+    --gradient_accumulation_steps 1 \
+    --learning_rate 1e-5 \
+    --warm_up 0.1 \
+    --adam_epsilon 1e-8 \
+    --weight_decay 0.0 \
+    --max_grad_norm 1.0 \
+    --n_best_size 20 \
+    --exp_name combine_version_01 \
+    --output_dir result \
+    --log_dir result \
+    --train_file ../dataset/korquad-open-ldbd/train/train_data/korquad_nsml_combine_train.json \
+    --predict_file ../dataset/korquad-open-ldbd/train/train_data/nsml_clear_dev.json \
+    --train_file_name all_korquad_nsml_combine_train \
+    --predict_file_name all_dev_clear \
+    --validation_label ../dataset/korquad-open-ldbd/train/dev_label \
+    --use_korquad \
+    --max_seq_length 384 \
+    --doc_stride 128 \
+    --max_query_length 64 \
+    --max_answer_length 30 
