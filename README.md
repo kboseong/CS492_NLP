@@ -2,6 +2,8 @@
 
 수업 내 1위를 달성하였습니다.
 
+발표자료는 [https://github.com/kboseong/CS492_NLP/blob/master/nlp_presentation_dingbro.pdf](https://github.com/kboseong/CS492_NLP/blob/master/nlp_presentation_dingbro.pdf) 을 참고해주세요
+
 train.py와 inference.py 실행을 위하여 apex라이브러리를 반드시 설치해주시기 바랍니다.
 
 cuda 10.0, pytorch 1.4 버전에서 프로젝트를 진행하였습니다.
