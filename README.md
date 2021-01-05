@@ -1,5 +1,7 @@
 본 repo는 NSML 상에서 수행한 korquad-open-ldbd dataset의 학습과정과 inference 과정을 담고 있습니다. 
 
+수업 내 1위를 달성하였습니다.
+
 train.py와 inference.py 실행을 위하여 apex라이브러리를 반드시 설치해주시기 바랍니다.
 
 cuda 10.0, pytorch 1.4 버전에서 프로젝트를 진행하였습니다.
